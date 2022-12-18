@@ -18,7 +18,13 @@ test('it should initialize correctly', () => {
       'best-supporting-actor': null,
       'best-supporting-actress': null,
       'best-visual-effects': null,
-    }
+    },
+    submission: {
+      pending: false,
+      error: false,
+      success: false,
+    },
+    showModal: false,
   })
 })
 
