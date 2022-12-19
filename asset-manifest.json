@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae5d91af.css",
-    "main.js": "/static/js/main.ac67e3f7.js",
-    "static/js/377.b4785dfd.chunk.js": "/static/js/377.b4785dfd.chunk.js",
-    "index.html": "/index.html",
-    "main.ae5d91af.css.map": "/static/css/main.ae5d91af.css.map",
-    "main.ac67e3f7.js.map": "/static/js/main.ac67e3f7.js.map",
-    "377.b4785dfd.chunk.js.map": "/static/js/377.b4785dfd.chunk.js.map"
+    "main.css": "/movie-awards/static/css/main.ae5d91af.css",
+    "main.js": "/movie-awards/static/js/main.a9cbfaa3.js",
+    "static/js/377.eca8a734.chunk.js": "/movie-awards/static/js/377.eca8a734.chunk.js",
+    "index.html": "/movie-awards/index.html",
+    "main.ae5d91af.css.map": "/movie-awards/static/css/main.ae5d91af.css.map",
+    "main.a9cbfaa3.js.map": "/movie-awards/static/js/main.a9cbfaa3.js.map",
+    "377.eca8a734.chunk.js.map": "/movie-awards/static/js/377.eca8a734.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae5d91af.css",
-    "static/js/main.ac67e3f7.js"
+    "static/js/main.a9cbfaa3.js"
   ]
 }
