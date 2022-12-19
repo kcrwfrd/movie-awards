@@ -32,7 +32,7 @@ const Ballot = () => {
 
   return (
     <div className='ballot'>
-      <main className="container mx-auto">
+      <main className="container mx-auto px-2">
         <ul>
           {state.data.items.map((award) =>
             <li key={award.id} className='mb-12'>
@@ -48,14 +48,14 @@ const Ballot = () => {
       
       <footer className={classNames(
         'sticky bottom-0 w-full',
-        'bg-white dark:bg-slate-900/75 backdrop-blur',
-        'border-t border-slate-700'
+        'bg-gray-900/75 backdrop-blur',
+        'border-t border-gray-700'
       )}>
-        <div className='container mx-auto py-3 flex flex-row justify-end'>
+        <div className='container mx-auto py-3 px-2 flex flex-row justify-end'>
           <p
             aria-hidden={isValid}
             className={classNames(
-              'text-sm py-1 text-slate-300 transition',
+              'text-xs sm:text-sm py-1 text-slate-300 transition',
               (isValid) ? 'opacity-0' : 'opacity-100',
             )}
           >
@@ -67,13 +67,14 @@ const Ballot = () => {
               aria-disabled={!canSubmit}
               onClick={() => {
                 dispatch({ type: 'submit' })
-                setTimeout(() => dispatch({ type: 'submit.success'}), 800)
+                setTimeout(() => dispatch({ type: 'submit.success'}), 900)
               }}
               className={classNames(
-                'py-1 px-3 bg-indigo-500',
+                'py-1 px-3',
                 'text-sm text-white uppercase',
+                'bg-[#009B86]',
                 'rounded-md shadow transition', {
-                  'hover:text-slate-100 hover:bg-indigo-600': canSubmit,
+                  'hover:text-slate-100 hover:bg-[#34AC9C]': canSubmit,
                   'opacity-30 cursor-not-allowed': !canSubmit,
                 }
               )}

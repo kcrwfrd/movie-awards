@@ -5,20 +5,28 @@ const NomineeCard = ({nominee, selected, onClick }) => {
   const { photoUrL, title } = nominee
   
   return (
-    <div 
-      className={classNames('border-solid', 'border-4', {
-        'border-slate-300': selected,
-        'border-slate-600': !selected,
-      })}
+    <li
+      className={classNames(
+        'card bg-base-100 card-compact cursor-pointer transition',
+        'opacity-80 hover:opacity-100',
+        'shadow-md hover:ring-4', {
+          'ring-4 ring-[#009B86]': selected,
+          'hover:ring-[#34AC9C]': !selected,
+        }
+      )}
       onClick={onClick}
     >
-      <img
-        src={photoUrL}
-        alt={title}
-        className='object-cover h-96 min-w-full object-center'
-      />
-      {title}
-    </div>
+      <figure>
+        <img
+          src={photoUrL}
+          alt={title}
+          className='object-cover object-center w-full h-64 sm:h-96'
+        />
+      </figure>
+      <div className='card-body'>
+        <h4>{title}</h4>
+      </div>
+    </li>
   )
 }
 
